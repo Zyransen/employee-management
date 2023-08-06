@@ -19,9 +19,9 @@ class ListEmployeeComponent extends Component {
     render() {
         return (
             <div>
-                <h2 className='text-center'>Employee List</h2>
-                <div className='row'>
-                    <table className='table table-bordered'>
+                <h2 class='text-center'>Employee List</h2>
+                <div class='row'>
+                    <table class='table table-bordered'>
                         <thead>
                             <tr>
                                 <th>First Name</th>

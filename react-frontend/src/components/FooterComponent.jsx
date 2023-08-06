@@ -4,8 +4,8 @@ class FooterComponent extends Component {
     render() {
         return (
             <div>
-                <footer className='footer'>
-                    <span className=''>Hallo!</span>
+                <footer class='footer'>
+                    <span class=''>Hallo!</span>
                 </footer>
             </div>
         );
