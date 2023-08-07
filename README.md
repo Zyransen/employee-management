@@ -1,2 +1,2 @@
 # employee-management-webapp
-Project for learning to develop a simple Full Stack Webapp using ReactJS + Spring Boot
+A simple project to learn how to develop a full-stack web app using ReactJS + Spring Boot
