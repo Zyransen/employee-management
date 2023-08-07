@@ -12,9 +12,25 @@ class ListEmployeeComponent extends Component {
     }
 
     componentDidMount() {
-        EmployeeService.getEmployees().then((res) => {
-            this.setState({employees: res.data})
-        })
+      this.loadEmployees()
+    }
+
+    loadEmployees() {
+      EmployeeService.getEmployees().then((res) => {
+        this.setState({employees: res.data})
+      })
+    }
+    handle() {
+      console.log('kek')
+    }
+
+    deleteEmployee(employeeId) {
+      console.log('yayayay')
+      EmployeeService.deleteEmployee(employeeId).then((res) => {
+        if(res.data.deleted){
+          this.loadEmployees()
+        }
+      })
     }
 
     render() {
@@ -48,6 +64,7 @@ class ListEmployeeComponent extends Component {
                                           <Link to={`/update-employee/${employee.id}`}>
                                             <button class="btn btn-info">Update</button>  
                                           </Link>
+                                          <button class="btn btn-danger" onClick={() => this.deleteEmployee(employee.id)}>Delete</button>
                                         </td>
                                     </tr>
                                 )
