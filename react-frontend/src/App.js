@@ -13,7 +13,7 @@ function App() {
         <div class="fixed-top">
           <HeaderComponent/>
         </div>
-        <div class='container'>
+        <div class='container' style={{marginTop: "5%"}}>
           <Routes>
             <Route path='/' element={<ListEmployeesComponent/>}/>
             <Route path='/employees' element={<ListEmployeesComponent/>}/>
