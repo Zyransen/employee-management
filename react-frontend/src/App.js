@@ -10,7 +10,7 @@ function App() {
   return (
     <div>
       <Router>
-        <div class="sticky-top">
+        <div class="fixed-top">
           <HeaderComponent/>
         </div>
         <div class='container'>
@@ -21,7 +21,7 @@ function App() {
             <Route path='/update-employee/:id' element={<UpdateEmployeeComponent/>}/>
           </Routes>
         </div>
-        <div class="sticky-bottom">
+        <div class="fixed-bottom">
           <FooterComponent/>
         </div>
       </Router>
