@@ -52,9 +52,9 @@ class ListEmployeeComponent extends Component {
                                 this.state.employees.map(
                                     employee => 
                                     <tr key = {employee.id}>
-                                        <td> {employee.firstName} </td>
-                                        <td> {employee.lastName} </td>
-                                        <td> {employee.email} </td>
+                                        <td class="text-center"> {employee.firstName} </td>
+                                        <td class="text-center"> {employee.lastName} </td>
+                                        <td class="text-center"> {employee.email} </td>
                                         <td> 
                                           <div class="d-flex justify-content-evenly">
                                             <Link to={`/update-employee/${employee.id}`}>
