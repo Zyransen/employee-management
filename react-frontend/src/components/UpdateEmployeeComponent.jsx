@@ -31,7 +31,7 @@ class UpdateEmployeeComponent extends Component {
     this.setState({ [name]: value });
   }
 
-  saveEmployee = (event) => {
+  updateEmployee = (event) => {
     event.preventDefault()
     let employee = {firstName: this.state.firstName, lastName: this.state.lastName, email: this.state.email}
     EmployeeService.updateEmployee(this.state.id, employee).then(res => {
@@ -62,7 +62,7 @@ class UpdateEmployeeComponent extends Component {
                           <input type="text" placeholder="Email" name="email" class="form-control" value={this.state.email} onChange={this.handleChange}/>
                         </div>
 
-                        <button class="btn btn-success" style={{marginTop: "10px"}} onClick={this.saveEmployee}>Update</button>
+                        <button class="btn btn-success" style={{marginTop: "10px"}} onClick={this.updateEmployee}>Update</button>
                         <Link to="/employees">
                         <button class="btn btn-danger" style={{marginLeft: "10px", marginTop: "10px"}}>Cancel</button>
                         </Link>
