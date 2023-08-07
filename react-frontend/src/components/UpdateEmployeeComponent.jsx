@@ -46,7 +46,7 @@ class UpdateEmployeeComponent extends Component {
                <div class="container">
                 <div class="row">
                   <div class="card col-md-6 offset-md-3">
-                    <h2 class="text-center">Add Employee</h2>
+                    <h2 class="text-center">Update Employee</h2>
                     <div class="card-body">
                       <form action="">
                         <div class="form-group">
