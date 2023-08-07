@@ -10,7 +10,9 @@ function App() {
   return (
     <div>
       <Router>
-        <HeaderComponent/>
+        <div class="sticky-top">
+          <HeaderComponent/>
+        </div>
         <div class='container'>
           <Routes>
             <Route path='/' element={<ListEmployeesComponent/>}/>
@@ -19,7 +21,9 @@ function App() {
             <Route path='/update-employee/:id' element={<UpdateEmployeeComponent/>}/>
           </Routes>
         </div>
-        <FooterComponent/>
+        <div class="sticky-bottom">
+          <FooterComponent/>
+        </div>
       </Router>
     </div>
     
