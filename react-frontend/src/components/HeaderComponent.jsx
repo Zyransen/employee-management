@@ -5,8 +5,9 @@ class HeaderComponent extends Component {
         return (
             <div>
                 <header>
-                    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-                      <div><a href="/" class='text-light text-decoration-none'>Employee Management App</a></div>
+                    <nav class="navbar navbar-expand-md navbar-dark bg-dark" style={{height: "50px"}}>
+                      <div style={{paddingLeft: "2%"}}><a href="/employees" class='text-light navbar-brand'>Employee Management App</a></div>
+                      <div style={{paddingLeft: "2%"}}><a href="/add-employee" class='text-light text-decoration-none'>Add Employee</a></div>
                     </nav>
                 </header>
             </div>
