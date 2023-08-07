@@ -44,6 +44,11 @@ class ListEmployeeComponent extends Component {
                                         <td> {employee.firstName} </td>
                                         <td> {employee.lastName} </td>
                                         <td> {employee.email} </td>
+                                        <td> 
+                                          <Link to={`/update-employee/${employee.id}`}>
+                                            <button class="btn btn-info">Update</button>  
+                                          </Link>
+                                        </td>
                                     </tr>
                                 )
                             }
