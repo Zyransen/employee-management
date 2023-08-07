@@ -36,12 +36,7 @@ class ListEmployeeComponent extends Component {
     render() {
         return (
             <div>
-                <h2 class='text-center fs-1 fw-semibold' style={{marginTop: "1.5%", marginBottom: "1.5%"}}>Employee List</h2>
-                <div class='row'>
-                    <Link to="/add-employee">
-                      <button class='btn btn-primary'>Add Employee</button>
-                    </Link>
-                </div>
+                <h2 class='text-center fs-1 fw-semibold' style={{marginTop: "1.5%", marginBottom: "2%"}}>Employee List</h2>
                 <div class='row'>
                     <table class='table table-bordered table-hover'>
                         <thead>
